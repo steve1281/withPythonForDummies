@@ -54,6 +54,117 @@ str(datetime.datetime.now().date())
 
 
 
+# comparisons (chap6)
+
+# unary operators
+# ~
+# -
+# +
+
+# binary operators
+# +
+# -
+# *
+# /
+# % return the remainder
+12 % 5
+# 2
+
+# ** exponent
+3 ** 2
+# 9
+
+#// integer division
+17 // 3
+# 5
+
+# relation operators
+#  ==
+# !=
+# >
+# <
+# >=
+# <=
+
+# logical operators
+# and
+# or
+# not
+
+# bitwise operators
+# & (and)
+0b10101 & 0b11110
+# 20
+bin(20)
+#'0b10100'
+
+# ! (Or)
+# ^ (exclusive Or)
+# ~ ones complement
+# << left shift
+# >> right shift
+0b1100 >> 2
+#3
+bin(3)
+# '0b11'
+
+#assignment
+# =
+# +=
+# -=
+# *=
+# /=
+# %=
+# **=
+# //=
+x = 3
+x **=2
+x
+#9
+
+# membership
+#In
+'Hello' in 'Is there a Hello in here?'
+#True
+#not in
+
+# is
+# is not
+x = 5
+type(x) is int
+#True
+type(x) is str
+# False
+type(x) is float
+# False
+
+# creation of functions
+def Hello():
+     print ("This is my first python function.")
+
+Hello()
+# This is my first python function.
+
+
+def AddIt(value1,value2):
+    print(value1," + ",value2,' = ',(value1+value2))
+
+AddIt(1,2)
+# 1  +  2  =  3
+
+# parameterised
+AddIt(value2=6,value1=5)
+# 5  +  6  =  11
+
+# variable length arguments
+def Hello4(argc,*argv):
+    print('you passed ', argc, "arguments.")
+    for arg in argv:
+        print(arg)
+
+#user input
+name = input ("tell me your name")
+print("Hello ",name)
 
 
 
