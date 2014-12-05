@@ -166,6 +166,40 @@ def Hello4(argc,*argv):
 name = input ("tell me your name")
 print("Hello ",name)
 
+# chapter 7
+# decisions
+
+testme = 6
+if testme == 6:
+    print("testme equals 6")
+
+#testme equals 6
+
+# note:  the indentation determines the block
+if testme == 6:
+     print("Yes it does")
+     print("all done")
+
+#Yes it does
+#all done
+
+# else ...
+
+value = int(input('a value between 0 to 10'))
+if (value >0) and (value <10) :
+    print ('well done')
+else:
+    print ('not so good!')
+
+#a value between 0 to 10>? 5
+# well done
+
+#a value between 0 to 10>? 13
+#not so good!
+
+
+# chaining ifs
+
 
 
 
