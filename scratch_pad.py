@@ -220,7 +220,8 @@ for letter in 'howdy':
 value = input("type less than 6 characters: ")
 # type less than 6 characters: >? alphabeta
 letternum =1
- for letter in value:
+
+for letter in value:
      print("letter: ", letternum, " is ", letter)
      letternum+=1
      if letternum > 6:
@@ -283,6 +284,94 @@ for x in range(1,11):
   # 8    8   16   24   32   40   48   56   64   72   80
   # 9    9   18   27   36   45   54   63   72   81   90
   #10   10   20   30   40   50   60   70   80   90  100
+
+
+#chapter 9 dealing with errors
+
+# syntactical - typo
+# semantic    - code is correct, but executes at wrong time. (e.g. fence post error)
+# logical     - code is wrong. The algorithm is incorrect.
+
+# types of exceptions
+#  base classes
+#  concrete exceptions - e.g. running out of memory
+#  OS exceptions - e.g. trying to open a file that is not there
+#  warnings - i.e. trying to use a class in an unintended way
+
+
+# examples of exception handling...
+
+try:
+    value = int(input("type a number between 1 and 10: "))
+
+except ValueError:
+    print("you must type a number between 1 and 10")
+
+else:
+    if (value > 0) and (value <= 10):
+        print("you typed: ", value)
+    else:
+        print("the value you typed is incorrect!")
+
+
+
+#type a number between 1 and 10: >? alpha
+#you must type a number between 1 and 10
+
+try:
+    value = int(input('enter value between 1 and 10:'))
+except:
+    print ("you must enter a value between 1 and 10")
+else:
+    if (value > 0 ) and (value <=10):
+        print("you typed: ",value)
+    else:
+        print("The value is less than 1 or more than 10")
+
+# multiple exceptions, one except
+try:
+    value = int(input('enter value between 1 and 10:'))
+except (ValueError,KeyboardInterrupt):
+    print ("you must enter a value between 1 and 10")
+else:
+    if (value > 0 ) and (value <= 10):
+        print("you typed: ", value)
+    else:
+        print("The value is less than 1 or more than 10")
+
+# multiple exceptions, many excepts
+try:
+    value = int(input('enter value between 1 and 10:'))
+except ValueError:
+    print ("you must enter a value between 1 and 10")
+except KeyboardInterrupt:
+    print ("you must enter a value between 1 and 10")
+
+else:
+    if (value > 0 ) and (value <= 10):
+        print("you typed: ", value)
+    else:
+        print("The value is less than 1 or more than 10")
+
+
+
+# raising your own exceptions
+
+try:
+    Ex = ValueError()
+    Ex.strerror = "Value must be between 1 and 10"
+    raise Ex
+except ValueError as e:
+    print("ValueError Excpetion",e.strerror)
+    sys.exit()   # carefull, this will halt execution.
+finally:
+    print("cleanup")
+
+
+
+
+
+
 
 
 
