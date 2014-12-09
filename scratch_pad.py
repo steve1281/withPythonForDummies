@@ -367,11 +367,91 @@ except ValueError as e:
 finally:
     print("cleanup")
 
+"""
+for i = 1 to 100 do {
+     if ( i % 3 ==0 && i % 5 ==0)
+         print 'FizzBuzz'
+     else if ( i % 3 == 0 )
+         print 'Fizz'
+     else if ( i % 5 == 0 )
+         print 'Buzz'
+     else
+          print i
+   }
+
+"""
+
+for x in range(1,100):
+    if ( x % 3 == 0) and (x % 5 == 0):
+        print ('FizzBuzz ', x)
+    elif (x % 3 == 0):
+        print ('Fizz ', x)
+    elif (x % 5 == 0):
+        print ('Buzz ', x)
+    else:
+        print(x)
+
+"""
+// missing element quiz
+// list of n integers ... range 1 to n+1
+// no duplicates
+// what is the quickest way to find the missing integer?
+// allocate an array of size n+1
+
+// loop through the i/p assign array[j] = ip[j] (increment j)
+// loop through and find the missing one still -1
+
+// assume ip
+// loop through make all -1
+dim arr[n+1]
+for i = 1 to n+1
+   arr[i] = -1
+
+for j = 1 to n
+    arr[ ip[j]] = 1
+
+for i=1 to n+1
+  if arr[i] == -1
+      print 'you are missing : ' , i
+      break
+"""
 
 
 
 
+def find_missing(ip):
+    """
+    list of n integers ... range 1 to n+1
+    no duplicates
+    what is the quickest way to find the missing integer?
+    """
 
+    n = len(ip)
+    print(ip)
+    a = []
+
+    # init
+    for i in range(n+1):
+        print (i)
+        a.append(-1)
+
+    print(a)
+
+    print('----')
+    # scan
+    for i in range(n):
+        print(i+1)
+        a[ip[i+1]] = 1
+
+    print('----')
+    # locate missing integers
+    for i in range(n+1):
+        print(i)
+        if (a[i] == -1):
+            print('missing entry', i)
+
+    return
+find_missing([1,2,4,5,6,7,8,9])
 
 
 
