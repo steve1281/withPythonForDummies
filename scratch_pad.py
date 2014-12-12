@@ -453,6 +453,21 @@ def find_missing(ip):
     return
 find_missing([1,2,4,5,6,7,8,9])
 
+# pydoc3 -p 8000
+# /Library/Frameworks/Python.framework/Versions/3.4/bin
+# http://localhost:8000/
+# http://localhost:8000/get?key=print   (search for information on print)
+# http://localhost:8000/print   (search for information on print)
+
+
+# or
+# pydoc -p 8000
+# http://localhost:8000/
+# http://localhost:8000/print   (search for information on print)
+
+
+
+
 
 
 
