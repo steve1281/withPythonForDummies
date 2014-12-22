@@ -466,7 +466,114 @@ find_missing([1,2,4,5,6,7,8,9])
 # http://localhost:8000/print   (search for information on print)
 
 
+#chapter 11 - strings
+#
+print('Hello there (single quote)')
+print("Hello there (double quote)")
+print("""Triple quote
+across several lines, you can also
+use triple single quotes.""")
 
+print ("""
+This might be a nice way to have a little
+01234567890123456789012345678901234567890123456789
+01234567890123456789012345678901234567890123456789
+01234567890123456789012345678901234567890123456789
+""")
+
+#
+# special characters
+# control - characters to how stuff is displayed... eg) tab
+# accented - characters with an accent, like a ^
+# drawing - character art
+# typographical - special characters like pilcrow
+# other - dependant on the character set you use.
+
+# escape sequences are used to display special characters.
+# \\ backslash
+# \'  or \"
+# \a
+# \b
+# \f
+# \n
+# \r
+# \t
+# \uhhhh - unicode character
+# \v vertical tab
+# \ooo - character from octal
+# \xhh - character from hex
+
+print("one line \r\nnext line")
+print("accented A: \xC0")
+print("a drawing character: \u2562")
+print("a pilcrow: \266")
+print("a division sign: \xF7")
+"""
+one line
+next line
+accented A: À
+a drawing character: ╢
+a pilcrow: ¶
+a division sign: ÷
+"""
+
+# selecting individual characters
+
+s1 = "Hello World"
+s2 = "Python is fun!"
+
+print (s1[0])
+print (s1[0:5])
+print (s1[:5])
+print (s1[6:])
+
+s3 = s1[:6] + s2[:6]
+print (s3)
+
+print(s2[:7]*5)
+
+"""
+H
+Hello
+Hello
+World
+Hello Python
+Python Python Python Python Python
+"""
+
+# tools for manipulating strings
+# there are a fair number of these!
+"""
+capitalize()
+center(width, fillchar=" ")
+expandtabs(tabsize=8)
+isalnum()
+isalpha()
+isdececimal()
+isdigit()
+islower()
+isnumeric()
+isspace()
+istitle()
+isupper()
+join(seq)
+len(string)
+ljust(width, fillchar-" ")
+lower()
+lstrip()
+max(str)
+min(str)
+rjust(width, fillchar=" ")
+rstrip()
+split(str=" ", num=string.count(str))
+splitlines(num=string.count('\n'))
+strip()
+swapcase()
+title()
+upper()
+zfill(width)
+
+"""
 
 
 
