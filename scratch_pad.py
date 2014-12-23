@@ -575,15 +575,116 @@ zfill(width)
 
 """
 
+mystring = "    Hello World     "
+
+print(mystring.upper())
+
+print(mystring.strip())
+print(mystring.center(21,"*"))
+print(mystring.strip().center(21,"*"))
+
+print(mystring.isdigit())
+print(mystring.istitle())
+
+print(max(mystring))
+
+print(mystring.split())
+print(mystring.split()[0])
+
+"""
+   HELLO WORLD
+Hello World
+*    Hello World
+*****Hello World*****
+False
+True
+r
+['Hello', 'World']
+Hello
+
+"""
 
 
+# locating a value in a string
+# count(str, beg=0, end=len(string))
+# endswith(suffix, beg=0, end=len(string))
+# find(str, beg=0,end=len(string))
+# index(str,beg=0, end=len(string))
+# replace(old, new [, max])
+# rfind(str, beg=0, end=len(string))
+# rindex(str,beg=0,end=len(string))
+# startswith(prefix, beg=0, end=len(string))
 
+searchme = "The apple is red and the berry is blue!"
 
+print (searchme)
+print(searchme.find("is"))
+print(searchme.rfind("is"))
 
+print(searchme.count("is"))
 
+print(searchme.startswith("The"))
+print(searchme.endswith("The"))
 
+print(searchme.replace("apple", "car").replace("berry","truck"))
+"""
+The apple is red and the berry is blue!
+10
+31
+2
+True
+False
+The car is red and the truck is blue!
+"""
 
+#formatting strings; a number of ways
+# [[fill] align][sign][#][0][width][,][.precision][type]
+#
+# fill : fill character when there are not enough
+# align: left <:  right >:  center ^: justified =:
+# sign: + - or space
+# # use alternative number format (0x)
+# 0 sign aware and padded with 0s
+# width
+# , thousands seperator
+# .precision characters past the decimal
+# type String s, Integer b c d o x X n, Floating e E f F g G n %
 
+#examples
+formatted = "{:d}"
+print (formatted.format(7000))
+
+formatted = "{:,d}"
+print (formatted.format(7000))
+
+formatted = "{:^15,d}"
+print (formatted.format(7000))
+
+formatted = "{:*^15,d}"
+print (formatted.format(7000))
+
+formatted = "{:*^15.2f}"
+print (formatted.format(7000))
+
+formatted = "{:*>15X}"
+print (formatted.format(7000))
+
+formatted = "{:*<#15X}"
+print (formatted.format(7000))
+
+formatted = "A {0} {1} and a {0} {2}."
+print(formatted.format("blue", "car", "truck"))
+
+"""
+7000
+7,000
+     7,000
+*****7,000*****
+****7000.00****
+***********1B58
+0X1B58*********
+A blue car and a blue truck.
+"""
 
 
 
