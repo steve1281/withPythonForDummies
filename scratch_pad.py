@@ -686,6 +686,93 @@ print(formatted.format("blue", "car", "truck"))
 A blue car and a blue truck.
 """
 
+# chapter 12 Managing Lists
+
+list1 = ["one",1,"two",True]
+print(list1)
+dir(list1)
+
+# append
+# clear
+# copy
+# count
+# extend
+# index
+# insert
+# pop
+# remove
+# reverse
+# sort
+
+list1[1]
+# 1
+list[1:3]
+# [1,'two']
+list[1:]
+# [1,'two',True]
+
+# modifying lists
+list1 = []
+len(list1)
+# 0
+list1.append(1)
+len(list1)
+# 1
+list1.insert(0,2)
+print(list1)
+# [2,1]
+
+list2 = list1.copy()
+list2
+# [2, 1]
+
+list1.extend(list2)
+list1
+# [2, 1, 2, 1]
+
+list1.pop()
+# 1
+list1
+# [2, 1, 2]
+
+list1.remove(1)
+list1
+# [2, 2]
+
+list1.clear()
+list1
+# []
+
+# operators with lists
+list1 = ["hello"] * 4
+list1
+# ['hello', 'hello', 'hello', 'hello']
+
+list1 = ["hello"] + [" "] + ["world"]
+print(list1)
+# ['hello', ' ', 'world']
+
+'hello' in list1
+# True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
