@@ -755,6 +755,74 @@ print(list1)
 'hello' in list1
 # True
 
+# chapter 12 - strings ( see counter, search and sort)
+# chapter 13 - data structures
+# tuple -
+# dictionary
+# stack
+# queue
+# deque
+
+
+# tuples
+MyTuple = ("Red","Blue","Green")
+print(type(MyTuple))
+# <type 'tuple'>
+MyTuple = MyTuple.__add__(("Purple",))
+print(MyTuple)
+# ('Red', 'Blue', 'Green', 'Purple')
+MyTuple[2]
+# 'Green'
+MyTuple[2][3]
+# 'e'
+
+# dictionaries
+colors = {"Sam":"Blue","Amy":"Red","Sarah":"Yellow"}
+print(type(colors))
+# <class 'dict'>
+print(colors)
+# {'Sarah': 'Yellow', 'Amy': 'Red', 'Sam': 'Blue'}
+print(colors['Amy'])
+# Red
+for i in colors.keys():
+    print("{0} likes the color {1}.".format(i,colors[i]))
+
+"""
+Sarah likes the color Yellow.
+Amy likes the color Red.
+Sam likes the color Blue.
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
