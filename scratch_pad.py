@@ -794,6 +794,79 @@ Sam likes the color Blue.
 
 """
 
+#chapter 14 - classes
+# class
+# class variable
+# data member
+# function overloading
+# inheritance
+# instance
+# instance variable
+# instantiation
+# method
+# object
+# operator overloading
+
+class MyClass:
+    MyVar = 0
+
+MyInstance = MyClass()
+print(MyInstance.MyVar)
+print(MyInstance.__class__)
+
+# class method example - note how it is called, and the lack of self
+class MyClass:
+    def SayHello():
+        print('hello there!')
+
+MyClass.SayHello()
+
+# instance method - note you need an instance, and the presence of self
+class MyClass:
+    def SayHello(self):
+        print('Hello there!')
+
+MyInstance = MyClass()
+MyInstance.SayHello()
+
+# constructors
+class MyClass:
+    Greeting = ''
+    def __init__(self, Name='there'):
+        self.Greeting = Name + "!"
+
+    def SayHello(self):
+        print("Hello {0}".format(self.Greeting))
+
+x = MyClass('Steve')
+x.SayHello()
+# Hello Steve!
+
+# -----------
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter14'])
+import age
+
+SamsRecord = age.MyClass()
+AmysRecord = age.MyClass("Amy",44)
+
+# --------
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter14'])
+import animal
+MyChicken = animal.Chicken("Sally", 2)
+print(MyChicken)
+# Sally is a Chicken aged 2
+MyChicken.SetAge(MyChicken.GetAge()+1)
+print(MyChicken)
+# Sally is a Chicken aged 3
+MyChicken.SetType('Gorilla')
+# Sorry, Sally will always be a Chicken
+MyChicken.MakeSound()
+# Sally says Cluck, Cluck, Cluck!
+
+
+
+
+
 
 
 
