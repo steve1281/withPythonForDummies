@@ -863,8 +863,42 @@ MyChicken.SetType('Gorilla')
 MyChicken.MakeSound()
 # Sally says Cluck, Cluck, Cluck!
 
+#chapter 15 - file storage
+# CRUD - create, read, update and delete.
+
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter15'])
+from FormattedData import FormatData
+
+NewData = [FormatData("George",65,True),FormatData("Sally",47, False),FormatData("Doug",52,True)]
+
+for Entry in NewData:
+    print(Entry)
+
+# V2 - create
+
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter15'])
+from FormattedDataV2 import FormatData
+
+NewData = [FormatData("George",65,True),FormatData("Sally",47, False),FormatData("Doug",52,True)]
+
+FormatData.SaveData("TestFile.csv",NewData)
 
 
+#V3 - reading
+
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter15'])
+from FormattedDataV3 import FormatData
+import ReadCSV
+
+# updating content
+sys.path.extend(['/Users/steve1281/Desktop/python/withPythonForDummies/Chapter15'])
+from FormattedDataV3 import FormatData
+import UpdateCSV
+
+# deleting a file
+import os
+os.remove("ChangeFile.csv")
+print("File Removed!")
 
 
 
