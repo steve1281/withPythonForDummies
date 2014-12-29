@@ -900,10 +900,50 @@ import os
 os.remove("ChangeFile.csv")
 print("File Removed!")
 
+# chapter 16 (sending an email)
 
+import socket
+print(socket.gethostbyname("localhost"))
+print(socket.gethostbyaddr("127.0.0.1"))
+print(socket.getservbyport(25))
+print(socket.gethostname())
+print(socket.gethostbyname(socket.gethostname()))
 
+"""
+127.0.0.1
+('localhost', ['1.0.0.127.in-addr.arpa'], ['127.0.0.1'])
+smtp
+bigmac.local
+192.168.1.103
+"""
 
+from email.mime.text import MIMEText
+msg = MIMEText("Hello There")
+msg['Subject'] = "A Test Message"
+msg['From'] = 'Steve Falcigno <steve1281@hotmail.com'
+msg['To'] = 'Steve Falcigno <steve1281@hotmail.com'
+msg.as_string()
+"""
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: A Test Message
+From: Steve Falcigno <steve1281@hotmail.com
+To: Steve Falcigno <steve1281@hotmail.com
 
+Hello There
+
+"""
+import smtplib
+# this is modified from the book, because the book assumes you have a smtp server running on you PC
+# (which is really unlikely) So, here are some instructions I found on StackOverflow that work)
+#
+s = smtplib.SMTP("smtp.live.com",587)
+s.ehlo()
+s.starttls()
+s.ehlo()
+s.login('steve1281@hotmail.com', '<passwordgoeshere>')
+s.sendmail('steve1281@hotmail.com',['steve1281@hotmail.com'],msg.as_string())
 
 
 
