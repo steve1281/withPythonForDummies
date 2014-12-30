@@ -993,6 +993,36 @@ s.sendmail('steve1281@hotmail.com',['steve1281@hotmail.com'],msg.as_string())
 # virtual environments
 # https://pypi.python.org/pypi/virtualenv
 
+#interactive environment
+#http://ipython.org/
+
+# unit testing - pyunit
+# https://wiki.python.org/moin/PyUnit
+
+# code tidying
+# http://timothycrosley.github.io/isort/
+
+
+# critical libraries
+#
+# general note: useful libraries: https://wiki.python.org/moin/UsefulModules
+
+# PyCrypto - https://www.dlitz.net/software/pycrypto/
+# SQLAlchemy - http:/www.sqlalchemy.org/
+# googlemaps - http://pypi.python.org/pypi/googlemaps/
+# TkInter (GUI) - http://www.tcl.tk/
+# PrettyTable - https://pypi.python.org/pypi/PrettyTable
+# PyAudio - http://people.csail.mit.edu/hubert/pyaudio/
+# PyQtGraph - http://www.pyqtgraph.org
+#  - needs pyqt or pyslide, numpy, scipy, and pyopengl
+# IRLib - search engine
+# JPype - bridge between java and python - http://jpype.sourceforge.net/
+# LAN resource - Twisted Matrix - https://twistedmatrix.com/trac/
+
+##--- and the index ---
+
+
+
 
 
 
