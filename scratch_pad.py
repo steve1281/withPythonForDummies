@@ -946,6 +946,54 @@ s.login('steve1281@hotmail.com', '<passwordgoeshere>')
 s.sendmail('steve1281@hotmail.com',['steve1281@hotmail.com'],msg.as_string())
 
 
+# chapter 17 - additional resources.
+
+# Online documentation: https://docs.python.org/3/
+
+# Tutorials: http://www.learnpython.org/
+#  - generators
+#  - list comprehensions
+#  - multiple function arguments
+#  - regular expressions
+#  - exception handling
+#  - sets
+#  - serialization
+#  - partial functions
+#  - code introspection
+#  - decorator
+
+# web programming
+# https://wiki.python.org/moin/WebProgramming
+
+# additional libraries downloads.effbot.org
+# aggdraw - anti-alias drawings
+# celementtree - xml tools
+# console - windows console library
+# effbot -
+# elementsoap - client side soap applications
+# elementtidy - more xml
+# elementtree - more xml
+# exemaker - make executable from python
+# ftpparse - library for ftp
+# grabscreen - screen caps
+# imaging - imaging for PIL
+# pil - binary installer
+# pythondoc - create documentation from you comments, like javadoc
+# squeeze - tool to merge your files into one (for distribution)
+# tkinter3000 - gui
+
+# IDE options for python
+# https://wiki.python.org/moin/PythonEditors
+
+# some tools
+
+# github, google code, bitucket
+# roundup - http:/roundup.sourceforge.net/
+
+# virtual environments
+# https://pypi.python.org/pypi/virtualenv
+
+
 
 
 
